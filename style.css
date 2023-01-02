@@ -16,6 +16,7 @@
     --black:#212529;
     --helper:#8490ff;
     --helper-tint:#f3f4ff;
+    --icon-bg: rgba(144, 72, 209, 0.2);
     --bg: rgb(249 249 255);
     --gradient: linear-gradient(0deg, rgb(132 144 255) 0% rgb(98 189 255)100%);
     --gradientSupport: -webkit-linear-gradient(
@@ -356,9 +357,88 @@ portfolio section start here
         color: var(--white);
         text-decoration: none;
     }
-    .p-btn:hover{
+    .p-btn-active{
         transform: translateY(-1rem);
+    }
+    .p-image-not-active{
+        display: none;
+    }
+
+      /* ==========================
+          conter section start here
+============================ */
+    .section-work-data{
+        background: var(--gradientSupport);
+        text-align: center;
+        transition: all 0.7s linear;
+        color: var(--white);
+    }
+    .conter-number{
+        font-size: 4.8rem;
+    }
+    .section-work-data p{
+        color: var(--white);
     }
 
 
-    
+         /* ============================
+          our services section start here
+============================ */
+.section-services{
+    transition: all 0.7 linear;
+}
+.section-services p{
+    max-width: 50rem;
+}
+.section-services .grid{
+    margin-top: 8rem;
+    gap: 4rem;
+    row-gap: 4rem;
+}
+
+.service-box{
+    text-align: center;
+    box-shadow: var(--shodow);
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.2s linear;
+}
+
+.service-box:hover,
+.service-box:active{
+    transform: translateY(-3rem);
+}
+.service-icon{
+    width:8rem;
+    height:8rem;
+    background: var(--icon-bg);
+    border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
+    padding: 1.8rem 1.4rem;
+    position: relative;
+    color: var(--heading);
+    animation: water-wave 3s linear infinite;
+}
+.service-icon::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    height:90%;
+    border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
+    background: transparent;
+    border:  1px solid var(--black);
+}
+@keyframes water-wave{
+    0%{
+        border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
+    }
+    50%{
+        border-radius: 3% 97% 15% 85%/ 72% 0% 100% 28%;
+    }
+
+    100%{
+        border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
+    }
+}
