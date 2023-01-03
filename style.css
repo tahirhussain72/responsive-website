@@ -108,6 +108,10 @@ reusabal code start here
 .section{
     padding: 7rem 9rem;
 }
+.container{
+    max-width: 80vw;
+    margin: 0 auto;
+}
 .grid{
     display: grid;
     gap: 9rem;
@@ -407,6 +411,14 @@ portfolio section start here
 .service-box:hover,
 .service-box:active{
     transform: translateY(-3rem);
+    /* transform: rotate(180deg); */
+}
+.service-icon{
+    transition: all 0.7s linear;
+}
+.service-icon:hover{
+
+    transform: rotate(360deg);
 }
 .service-icon{
     width:8rem;
@@ -429,6 +441,7 @@ portfolio section start here
     border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
     background: transparent;
     border:  1px solid var(--black);
+    animation: water-wave 3s linear infinite;
 }
 @keyframes water-wave{
     0%{
@@ -441,4 +454,273 @@ portfolio section start here
     100%{
         border-radius: 56% 44% 70% 30%/ 30% 54% 46% 70%;
     }
+}
+
+
+.service-box h3{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+    /* ============================
+          our testimonial section start here
+============================ */
+.swiper{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .swiper-slide{
+    width: 25%;
+    height: auto;
+    flex-direction: column;
+    /* text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    Center slide text vertically;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+  }
+  .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* .swiper-slide  img {
+    display: inline-block;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  /* .slider-img{
+    max-width: 100%;
+    max-height: 80%; 
+  }
+  .swiper-slide {
+    width: 80%;
+  } */
+
+  /* .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  } */
+
+  .swiper-client-msg{
+    padding: 2rem 4rem;
+    background: var(--white);
+    position: relative;
+    align-items: left;
+    border-radius: 1rem;
+    box-shadow: var(--shodow);
+  }
+  .swiper-client-msg p::before{
+    content: "\f10d";
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    font-size: 2rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ced3ff;
+  }
+  .swiper-client-msg p::after{
+    content: "\f10e";
+    position: absolute;
+    bottom:  0;
+    right: 2rem;
+    font-size: 2rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ced3ff;
+  }
+  .swiper-client-msg::before{
+    content: "";
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border:5rem solid var(--white);
+    border-color: transparent;
+    border-top-color: var(--helper-tint);
+  }
+
+
+  .swiper-client-data{
+    align-items: center;
+    margin-top: 3.2rem;
+    gap: 0;
+  }
+  .swiper-slide img{
+    margin-left: 150px;
+  }
+  .swiper-slide img{
+    /* padding-left: 2rem; */
+    justify-content: space-evenly;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: .5rem solid var(--helper-tint);
+  }
+
+  .swiper-pagination{
+    padding-top: 5rem;
+  }
+
+
+  /* ============================
+          our freelancing section start here
+============================ */
+
+.section-freelancing{
+    background-image:url("images/background3.PNG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    transition: all 0.7s linear;
+}
+
+.section-freelancing .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color:var(--helper);
+    background-color: #3e64ff;
+    opacity: 0.7;
+}
+.section-freelancing .container{
+    position: relative;
+}
+
+.section-freelancing h2{
+    font-size: 4.3rem;
+}
+.section-freelancing span{
+    color: #a0f669;
+}
+.section-freelancing h2, 
+.section-freelancing p{
+    color: var(--white);
+    margin-bottom: 1.3rem;
+}
+
+
+
+ /* ============================
+          our freelancing section start here
+============================ */
+
+.section-contact-main{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 9rem;
+    transition: all 0.7s linear;
+}
+.section-contact-main .grid{
+    gap: 3.2rem;
+}
+
+.section-contact-main form{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.section-contact-main input,
+.section-contact-main textarea{
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "work sans";
+    width: 100%;
+}
+.section-contact-main input[type="submit"]{
+    width: 20%;
+    bottom: none;
+}
+
+
+/* ============================
+footer start here
+============================ */
+.section-footer{
+    background-color: var(--heading);
+    transition: all 0.7s linear;
+}
+.section-footer h3{
+    color: var(--white);
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+}
+.f-about p{
+    color: #adadad;
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
+}
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a{
+    font-size: 1.8rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+.f-links span,
+.f-services span,
+.f-address span{
+    margin-right: 1rem;
+}
+
+.f-address p,
+.f-address p a{
+    font-style: normal;
+    color: #adadad;
+    gap: 1.8rem;
+}
+.f-social-icon{
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+.f-social-icon .icons{
+    width:4rem;
+    height:4rem;
+    background-color: var(--icon-bg);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+}
+
+.f-credits{
+    text-align: center;
+    font-size:2rem;
 }

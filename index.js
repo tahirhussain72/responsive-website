@@ -13,3 +13,19 @@ p_btns.addEventListener('click', (e)=>{
    img_active.forEach((curElem) => curElem.classList.remove("p-image-not-active"));
 
 });
+
+// our testimonail start here
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 80,
+    autoplay:{
+        delay:2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
