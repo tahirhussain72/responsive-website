@@ -29,3 +29,72 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+
+
+//   scroll to top section start here 
+const heroSection = document.querySelector(".section-hero")
+const footerElem = document.querySelector(".section-footer");
+const scroolElem = document.createElement("div");
+scroolElem.classList.add("scrollTotop-style");
+scroolElem.innerHTML= `<ion-icon name="arrow-up-outline" class="scroll-up"></ion-icon>`;
+footerElem.after(scroolElem);
+const scrollTop = () =>{
+   heroSection.scrollIntoView({behavior: "smooth"});
+};
+scroolElem.addEventListener("click", scrollTop);
+
+
+// animate numbers 
+
+
+
+const counterNum = document.querySelectorAll(".conter-number");
+const speed = 200;
+counterNum.forEach((curElem) =>{
+   const updateNumber = () => {
+      const targetNumber = parseInt(curElem.dataset.number);  
+      // console.log(targetNumber);
+      const initialNum = parseInt(curElem.innerText);
+      // console.log(initialNum);
+
+      const incrementNumber = Math.trunc(targetNumber/speed);
+      // console.log(incrementNumber);
+
+      if(initialNum < targetNumber){
+         curElem.innerText = `${ initialNum + incrementNumber} +`; 
+         setTimeout(updateNumber , 10);
+      }
+   };
+   updateNumber();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

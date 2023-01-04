@@ -101,6 +101,13 @@ header start here
     color: var(--helper);
 }
 
+.mobile-navbar-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 /* ============================
 reusabal code start here
 ============================ */
@@ -702,6 +709,8 @@ footer start here
 .f-address p a{
     font-style: normal;
     color: #adadad;
+    padding: 1rem;
+    font-weight: 400;
     gap: 1.8rem;
 }
 .f-social-icon{
@@ -718,9 +727,57 @@ footer start here
     position: relative;
     color: var(--white);
     animation: water-wave 3s linear infinite;
+    cursor: pointer;
 }
 
 .f-credits{
     text-align: center;
     font-size:2rem;
+}
+.f-credits p span{
+    color: red;
+}
+.f-address a{
+    padding: 2rem;
+}
+
+.footer a:hover,
+.footer a:active{
+    color: var(--white);
+}
+
+
+
+.scrollTotop-style{
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+}
+.scroll-up{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--heading);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+}
+
+
+/* ============================
+media queries start here
+============================ */
+
+@media (max-width: 980px){
+    .header{
+        position: relative;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 9999;
+        color: #212529;
+        border: 3px solid var(--black);
+    }
 }

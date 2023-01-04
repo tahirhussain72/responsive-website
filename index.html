@@ -20,12 +20,16 @@
         <nav>
             <ul class="navbar-list">
                 <li><a href="#" class="navbar-link home-link">Home</a></li>
-                <li><a href="#" class="navbar-link about-link">About</a></li>
-                <li><a href="#" class="navbar-link service-link">Service</a></li>
-                <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
-                <li><a href="#" class="navbar-link contact-link">Contact Us</a></li>
+                <li><a href="/about.html" class="navbar-link about-link">About</a></li>
+                <li><a href="/service.html" class="navbar-link service-link">Service</a></li>
+                <li><a href="#portfolio-section" class="navbar-link portfolio-link">Portfolio</a></li>
+                <li><a href="/contact.html" class="navbar-link contact-link">Contact Us</a></li>
             </ul>
         </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
     </header>
     <!-- <=========================
     <---- hero section start here----->
@@ -179,19 +183,19 @@
     <section class="section section-work-data">
         <div class="container grid grid-four-column">
             <div>
-                <h2 class="conter-number">2000+</h2>
+                <h2 class="conter-number" data-number="2000">0+</h2>
                 <p>Project Completed</p>
             </div>
             <div>
-                <h2 class="conter-number">5000+</h2>
+                <h2 class="conter-number" data-number="6000">0+</h2>
                 <p>Happy Clients</p>
             </div>
             <div>
-                <h2 class="conter-number">6000+</h2>
+                <h2 class="conter-number"data-number="5000">0+</h2>
                 <p>Cup Of Coffee</p>
             </div>
             <div>
-                <h2 class="conter-number">3000+</h2>
+                <h2 class="conter-number"data-number="3000">0+</h2>
                 <p>Real Professionals</p>
             </div>
         </div>
@@ -458,7 +462,7 @@
     <!-- /* ============================
       footer  start here
      ============================ */ -->
-    <footer class="section-footer section">
+    <footer class="section-footer section footer">
         <div class="container grid grid-four-column">
             <div class="f-about">
                 <h3>about</h3>
@@ -475,19 +479,19 @@
                     </li>
                     <li>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
-                        <a href="#">Home</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
-                        <a href="#">Home</a>
+                        <a href="#">Service</a>
                     </li>
                     <li>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
-                        <a href="#">Home</a>
+                        <a href="#">Portfolio</a>
                     </li>
                     <li>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
-                        <a href="#">Home</a>
+                        <a href="#">Contact Us</a>
                     </li>
                     
                 </ul>
@@ -503,19 +507,19 @@
                     </li>
                     <li>
                         <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
-                        <a href="#">web design</a>
+                        <a href="#">Web Development</a>
                     </li>
                     <li>
                         <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
-                        <a href="#">web design</a>
+                        <a href="#">Main Project</a>
                     </li>
                     <li>
                         <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
-                        <a href="#">web design</a>
+                        <a href="#">Online Classes</a>
                     </li>
                     <li>
                         <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
-                        <a href="#">web design</a>
+                        <a href="#">Youtube Course</a>
                     </li>
                 </ul>
             </div>
@@ -525,18 +529,18 @@
                     <div>
                         <p>
                             <span><ion-icon name="location-outline"></ion-icon></span>
-                            <a href="">lahore,Pakistain</a>
+                            <a href="#">lahore,Pakistain</a>
                         </p>
                         <div>
                         <p>
                             <span><ion-icon name="call-outline"></ion-icon></span>
-                           <a href=""> +92-308-8149109</a>
+                           <a href="tel:+923088149109"> +92-308-8149109</a>
                         </p>
                     </div>
                     <div>
                         <p>
                             <span><ion-icon name="mail-outline"></ion-icon></span>
-                            <a href="">example@gmail.com</a>
+                            <a href="mailto:">example@gmail.com</a>
                         </p>
                     </div>
                     </div>
@@ -556,7 +560,7 @@
                 </a>
             </div>
             <div class="f-credits">
-                <p>copyright@2023 made by ❤ edwardain</p>
+                <p>copyright@2023 made by <span>❤</span> edwardain</p>
             </div>
         </div>
     </footer>
