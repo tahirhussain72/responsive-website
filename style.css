@@ -124,7 +124,7 @@ reusabal code start here
 ============================ */
 
 .section {
-    padding: 7rem 9rem;
+    padding: 7rem 0rem;
 }
 
 .container {
@@ -225,6 +225,7 @@ hero section start here
     font-weight: 700;
     font-size: 6.4rem;
 }
+
 
 /* ============================
 bio data section start here
@@ -947,8 +948,112 @@ media queries start here
     .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
         display: block;
     }
+    .section-hero h1{
+        line-height: 1.05;
+    }
+    .section-services .grid{
+        gap: 6rem;
+    }
+    .section-services .grid-three-column{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-footer .grid-four-column{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.hero-heading{
-    line-height: 1.05;
+/* for 790 */
+@media (max-width: 49em){
+    .container{
+        max-width: 71rem;
+    }
+    .section-hero .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+    .section-hero-data{
+        align-items: center;
+    }
+    .hero-heading{
+        align-items: center;
+    }
+    .hero-para{
+        align-items: center;
+    }
+    .section-hero-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-img{
+        width: 70%;
+    }
+    .section-bio .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+    .section-bio .bio-image{
+        grid-row: 2;
+        margin-top: 3.2rem;
+    }
+    .bio-image{
+        width: 50%;
+    }
+     
+    /* portfolio section  */
+
+.section-portfolio .grid-three-column{
+    grid-template-columns: repeat(2 , 1fr);
 }
+/* wrok data section  */
+.section-work-data .grid-four-column{
+    grid-template-columns: 1fr  1fr;
+}
+}
+
+
+ /* below 560px  */
+ @media (max-width: 35em){
+    .header{
+        padding: 0 3.2rem;
+    }
+    .logo{
+        max-width: 60%;
+    }
+    .conter-number{
+        font-size: 3em;
+    }
+    .section-services .grid-three-column{
+        grid-template-columns: 1fr;
+    }
+
+    .section-freelancing h2{
+        font-size: 3rem;
+    }
+    .section-contact-main .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+    .section-contact-main input[ type="submit" ]{
+        width: 50%;
+    }
+    .contact-container{
+        /* padding:  0 3.2rem; */
+    }
+    .section-footer .f-about,
+    .section-footer .f-address{
+        grid-column: 1/-1;
+    }
+     .section-footer .f-services a{
+        font-size: 1.5rem;
+    }
+    /* .section-hero .hero-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  */
+
+    .section-portfolio .grid-three-column{
+        /* grid-template-columns: 1fr; */
+        padding: 0 3.2rem;
+        width: 100%;
+    }
+ } 
+

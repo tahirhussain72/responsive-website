@@ -19,7 +19,7 @@ p_btns.addEventListener('click', (e)=>{
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
-    spaceBetween: 80,
+    spaceBetween: 30,
     autoplay:{
         delay:2500,
         disableOnInteraction: false,
@@ -29,6 +29,24 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+  const myjsMedia = (widthSize)=>{
+   if(widthSize.matches){
+    new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         
+       });
+   } else{
+    new Swiper(".mySwiper", {
+         slidesPerView: 2,
+         spaceBetween: 30,
+         
+       });
+   }
+  }
+  const widthSize = window.matchMedia("(max-width: 780px)");
+  myjsMedia(widthSize);
+  widthSize.addEventListener("change",myjsMedia);
 
 
 
