@@ -1,94 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <script defer src="index.js"></script>
-</head>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Our Portfolio">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="edwardain">
+        <title>About Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    </head>
 <body>
-     <!-- /* ============================
-      header  start here
-     ============================ */ -->
-    <header class="header">
+    <header class="header ">
         <img src="images/logo2.webp" alt="" class="logo">
-        <nav>
+        <nav class="navbar">
             <ul class="navbar-list">
                 <li><a href="index.html" class="navbar-link home-link">Home</a></li>
                 <li><a href="/about.html" class="navbar-link about-link">About</a></li>
                 <li><a href="/service.html" class="navbar-link service-link">Service</a></li>
-                <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
-                <li><a href="#" class="navbar-link contact-link">Contact Us</a></li>
+                <li><a href="#portfolio-section" class="navbar-link portfolio-link">Portfolio</a></li>
+                <li><a href="/contact.html" class="navbar-link contact-link">Contact Us</a></li>
             </ul>
         </nav>
-    </header>
-    <section class="section-bio section">
-        <div class="container grid grid-two-column">
-            <div class="bio-image">
-                <img src="images/hero-data.PNG" alt="" class="hero-img">
-            </div>
-
-
-             <!-- /* ============================
-      bio-data  start here
-     ============================ */ -->
-            <div class="bio-data">
-                <h2 class="common-heading"> my bio-data</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur amet iste quas sapiente
-                    dolorem odio! A soluta at dolore recusandae ut error, voluptatem fugiat maxime amet eius expedita
-                    repudiandae aliquam quaerat qui ullam quis ad odio earum rerum vero.</p>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim mollitia tempore repellendus
-                    obcaecati magnam velit repudiandae pariatur laborum perferendis?</p>
-                <br><br>
-                <div class=" bio-data-stats">
-                    <div class="bio-stats">
-                        <h3>Design</h3>
-                        <div class="stats-progress-bar bio-progress-bar">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>HTML</h3>
-                        <div class="stats-progress-bar bio-progress-bar-2">
-                            <span>95%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>CSS</h3>
-                        <div class="stats-progress-bar bio-progress-bar-3">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>BootStrap</h3>
-                        <div class="stats-progress-bar bio-progress-bar-4">
-                            <span>60%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>JavaScript</h3>
-                        <div class="stats-progress-bar bio-progress-bar-5">
-                            <span>30%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bio-data-btn">
-                    <a href="" class="btn">Download CV</a>
-                </div>
-            </div>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
         </div>
-    </section>
-     <!-- /* ============================
+    </header>
+     <!-- <=========================
+    <---- hero section start here----->
+    <!-- ==========================>  -->
+
+    <main>
+        <section class="section-hero section">
+            <div class="container grid grid-two-column">
+                <div class="section-hero-data">
+                    <p class="hero-top-data">
+                        this is me
+                    </p>
+                    <h1 class="hero-heading">Tahir hussain </h1>
+                    <p class="hero-para">
+                        This is Tahir Hussain toorie front end developer. I am a person who is positive about every
+                        aspect of life.
+                        There are many things I like to do, to see, and to experience. I like to read, I like to write;
+                        I like to think, I like to dream; I like to talk, I like to listen.
+
+                    </p>
+                    <div>
+                        <a href="#" class="btn hireme-btn"> hire me</a>
+                    </div>
+                </div>
+                <!-- <=========================
+                hero right side start here
+                ==========================> -->
+                <div class="section-hero-img">
+                    <img src="images/hero.PNG" alt="" class="hero-img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- /* ============================
       footer  start here
      ============================ */ -->
-    <footer class="section-footer section footer">
+     <footer class="section-footer section footer">
         <div class="container grid grid-four-column">
             <div class="f-about">
                 <h3>about</h3>
@@ -133,7 +119,7 @@
                     </li>
                     <li>
                         <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
-                        <a href="#">Web Development</a>
+                        <a href="#">Web development</a>
                     </li>
                     <li>
                         <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
@@ -190,12 +176,14 @@
             </div>
         </div>
     </footer>
-     <!-- /* ============================
+
+
+    <!-- /* ============================
       our js link start here
      ============================ */ -->
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

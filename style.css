@@ -964,6 +964,15 @@ media queries start here
     .section-footer .grid-four-column{
         grid-template-columns: 1fr 1fr;
     }
+    .img-overlay .common-heading{
+        font-size: 3.2rem;
+    }
+    .img-overlay .common-heading::before,
+    .img-overlay .common-heading::after{
+        content: "";
+        width:0;
+        height: 0;
+    }
 }
 
 /* for 790 */
