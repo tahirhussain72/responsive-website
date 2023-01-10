@@ -1,3 +1,14 @@
+// to create response navbar component
+
+var mobile_nav = document.querySelector(".mobile-navbar-button");
+const headerElem = document.querySelector(".header");
+
+mobile_nav.addEventListener("click", ()=>{
+   headerElem.classList.toggle("active");
+});
+
+// to create service 
+
 var p_btns = document.querySelector(".p-btns");
 var p_btn = document.querySelectorAll(".p-btn");
 const p_img_elem = document.querySelectorAll(".img-overlay");
@@ -52,26 +63,15 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-//   scroll to top section start here 
-const heroSection = document.querySelector(".section-hero")
-const footerElem = document.querySelector(".section-footer");
-const scroolElem = document.createElement("div");
-scroolElem.classList.add("scrollTotop-style");
-scroolElem.innerHTML= `<ion-icon name="arrow-up-outline" class="scroll-up"></ion-icon>`;
-footerElem.after(scroolElem);
-const scrollTop = () =>{
-   heroSection.scrollIntoView({behavior: "smooth"});
-};
-scroolElem.addEventListener("click", scrollTop);
+  
+  
+  // animate numbers 
 
-
-// animate numbers 
-
-
-
-const counterNum = document.querySelectorAll(".conter-number");
-const speed = 200;
-counterNum.forEach((curElem) =>{
+  
+  
+  const counterNum = document.querySelectorAll(".conter-number");
+  const speed = 200;
+  counterNum.forEach((curElem) =>{
    const updateNumber = () => {
       const targetNumber = parseInt(curElem.dataset.number);  
       // console.log(targetNumber);
@@ -90,14 +90,18 @@ counterNum.forEach((curElem) =>{
 });
 
 
-// to create response navbar component
 
-var mobile_nav = document.querySelector(".mobile-navbar-btn");
-const headerElem = document.querySelector(".header");
-
-mobile_nav.addEventListener("click", ()=>{
-   headerElem.classList.toggle("active");
-});
+//   scroll to top section start here 
+const heroSection = document.querySelector(".section-hero")
+const footerElem = document.querySelector(".section-footer");
+const scroolElem = document.createElement("div");
+scroolElem.classList.add("scrollTotop-style");
+scroolElem.innerHTML= `<ion-icon name="arrow-up-outline" class="scroll-up"></ion-icon>`;
+footerElem.after(scroolElem);
+const scrollTop = () =>{
+   heroSection.scrollIntoView({behavior: "smooth"});
+};
+scroolElem.addEventListener("click", scrollTop);
 
 
 

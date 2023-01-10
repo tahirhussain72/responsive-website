@@ -108,7 +108,7 @@ header start here
     color: var(--helper);
 }
 
-.mobile-navbar-btn {
+.mobile-navbar-button {
     display: none;
     background-color: transparent;
     border: none;
@@ -666,7 +666,7 @@ portfolio section start here
 ============================ */
 
 .section-freelancing {
-    background-image: url("/asssets/images/background3.avif");
+    background-image: url("/assets/images/background3.avif");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -894,7 +894,7 @@ media queries start here
         font-size: 50%;
     }
 
-    .mobile-navbar-btn {
+    .mobile-navbar-button {
         display: block;
         z-index: 9999;
         color: var(--black);
